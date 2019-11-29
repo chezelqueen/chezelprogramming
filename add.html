@@ -1,0 +1,142 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="add.css">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+
+<nav class="navbar navbar-inverse">
+		<ul class="nav navbar-nav">
+		    <li><a href="add.html">Costumer's Info</a></li> 
+		   <li><a href="add2.php">Costumer's File</a></li>
+           <li><a href="index3.php">Products</a></li>
+		   <li><a href="index4.php">Products file</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="logout.php">  Log Out</a></li>
+		  </ul>
+	  </nav>
+	  
+	  </nav>
+	<br/><br/>
+<style> 
+	input[type=text] {
+		  width: 80%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  box-sizing: border-box;
+		  border: 3px solid black;
+		  -webkit-transition: 0.5s;
+		  transition: 0.5s;
+		  outline: none;
+	}	
+	input[type=text]:focus {
+		  border: 3px solid red;
+		  
+	}
+		.navbar-inverse {
+   		background-color:white;
+        border: 5px white;
+		 color: black;
+	}
+	.navbar-inverse .navbar-nav>li>a {
+		color:black;
+		background-color:white(0, 0, 0, 0.9);
+    	font-size: 20px;
+	}
+	body{
+   	 	background-image: url(emp.jpg);
+    	background-attachment:fixed;
+		background-size:cover;
+
+	 }
+ 	.navbar{
+		 background-color:black (0, 0, 0, 0.9);
+	 }
+	 tbody{
+		 color:black;
+		 
+	 }
+	input{
+		color:black;
+		width: 80%;
+
+	}
+	.header{
+		width: 30%;
+		margin: auto ;
+    	color: black;
+    
+    	text-align: center;
+    	border: 1px solid white ;
+    	border-bottom: none;
+    	padding: 10px;
+		font-style: arial;
+		
+	  }
+	  .form1{
+		 width: 55%;
+		 margin: 0px auto ;
+    	 background: rgba(185, 187, 224, 0.2);
+		 color: white;
+    	 border: 1px solid ;
+    	 border-bottom: none;
+    	 border-radius:  0px 0px 10px 10px;
+    	 padding: 20px;
+		 font-style: arial;
+	  }
+	  table{
+		 width: 55%;
+    	 background: white(84, 84, 84, 0.20);
+    	 text-align: center;
+   
+    	 border-bottom: none;
+		 font-style: algerian;
+
+	  }
+</style>
+		<body>
+
+		<div class="header">
+				<h2>COSTUMER'S FILL UP FORM</h2><br>
+		</div>
+
+	<form action="add.php" method="post" name="form1" required>
+		<table>
+
+			<tr> 
+				<td>First Name</td>
+				<td><input type="text" name="fname"></td>
+			</tr>
+			<tr> 
+				<td>Last Name</td>
+				<td><input type="text" name="lname" ></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="text" name="gender"></td>
+			</tr>
+			<tr> 
+				<td>Birth Date</td>
+				<td><input type="date" name="birthdate"></td>
+			</tr>
+			<tr> 
+				<td>Address</td>
+				<td><input type="text" name="address" ></td>
+			</tr>
+			<tr> 
+				<td>Contact</td>
+				<td><input type="text" name="contact" ></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add" class="btn btn-danger" style="background-color:black"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
